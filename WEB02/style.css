@@ -156,6 +156,13 @@ h1 {
     text-align: center;
     background-image: url(./images/0101.jpg);
   }
+  .text{
+    margin-top: 32px;
+    font-weight: bold;
+    font-family: "DFKai-SB";
+    color:#0000FF;
+    font-style: italic;
+  }
 .footer{
     width:985px;
     height: 20px;
