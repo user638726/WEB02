@@ -157,11 +157,19 @@ h1 {
     background-image: url(./images/0101.jpg);
   }
   .text{
-    margin-top: 32px;
     font-weight: bold;
     font-family: "DFKai-SB";
     color:#0000FF;
     font-style: italic;
+    font-size: 24px;
+  }
+  .text1{
+    margin-top: 80px;
+    font-weight: bold;
+    font-family: "DFKai-SB";
+    color:#0000FF;
+    font-style: italic;
+    font-size: 24px;
   }
 .footer{
     width:985px;
