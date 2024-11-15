@@ -9,7 +9,7 @@ h1 {
 .header {
     display: flex;
     width: 1000px;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .container {
@@ -31,10 +31,13 @@ h1 {
     position: relative;
     display: inline-block;
 }
-
+.link2{
+    width:215px;
+    height:683px;
+}
 .link {
     display: inline-block;
-    width: 200px;
+    width: 215px;
     height: 35px;
     background-image: url('./images/menu1.png');
     background-size: cover; /* 确保背景图覆盖整个元素 */
@@ -48,7 +51,7 @@ h1 {
 }
 .link3{
     display: inline-block;
-    width: 200px;
+    width: 215px;
     height: 35px;
     background-image: url('./images/menu1.png');
     background-size: cover; /* 确保背景图覆盖整个元素 */
