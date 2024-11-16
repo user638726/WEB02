@@ -149,6 +149,16 @@ h1 {
       transform: translateX(-100%);
     }
   }
+  .text3{
+    font-size: 18px;
+    font-family: "DFKai-SB";
+    color: #f00;
+    text-align: center;
+    background-image: url(./images/0101.jpg);
+    width:770px;
+    height:654px;
+    margin: 0 auto;
+  }
   .main-footer{
     width:770px;
     height:600px;
