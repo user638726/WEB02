@@ -203,10 +203,9 @@ h1 {
 }
 
 .title {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 18px;
     color: #f00;
-      /* 讓表格距離標題有一點空間 */
+    font-family: "DFKai-SB";
 }
 
 table {
