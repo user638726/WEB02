@@ -116,7 +116,7 @@ h1 {
     font-family: "DFKai-SB";
     font-size: 16px;
     color:#000000;
-    margin-top:350px;
+    margin-top:360px;
     height:25px;
     
 }
@@ -157,7 +157,8 @@ h1 {
     background-image: url(./images/0101.jpg);
     width:770px;
     height:654px;
-    margin: 0 auto;
+    position: relative;
+    margin: 0 auto; 
   }
   .main-footer{
     width:770px;
@@ -187,7 +188,6 @@ h1 {
     margin-top: 0px;
     margin-bottom:  0px;
     margin-left: 250px;
-    
 }
 .footer2{
     text-align:center;
@@ -196,4 +196,32 @@ h1 {
     font-family: "DFKai-SB";
     
 
+}
+.content {
+    position: relative;
+    z-index: 1; /* 確保文字和表格在背景圖片之上 */
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f00;
+      /* 讓表格距離標題有一點空間 */
+}
+
+table {
+    margin: 0 auto; /* 將表格居中 */
+    width: 80%;  /* 可選，設置表格的寬度 */
+}
+
+.table1 {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "DFKai-SB";  /* 可選：為表格添加邊框 */
+      /* 可選：為單元格添加內邊距 */
+}
+.content1{
+    font-size: 16px;
+    text-align: left;
+    color:#FF0000
 }
