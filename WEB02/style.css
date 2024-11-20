@@ -6,6 +6,10 @@ h1 {
 
 }
 
+.h1_img {
+    text-decoration: none;
+}
+
 .header {
     display: flex;
     width: 1000px;
