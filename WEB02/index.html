@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>國立科技高中-校園社團介紹網</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             // 默认隐藏 iframe
             $('#frame').hide();
 
             // 点击 "吉他社" 链接时触发
-            $('#link4').on('click', function(event) {
+            $('#link4').on('click', function (event) {
                 event.preventDefault();  // 阻止默认行为，防止页面跳转
 
                 // 让 iframe 显示并加载 guitar_history.html
                 $('#frame').attr('src', './guitar_history.html').show();
-                
+
                 // 移除frame2（如果有需要）
                 $("#frame2").remove();
             });
@@ -43,7 +44,7 @@
             <a href="" class="link"><span class="overlay-text">童軍社</span></a>
             <div class="left-footer">最近更新日期：2024/11/15</div>
         </div>
-        
+
         <div class="main">
             <div class="main-header">
                 <div class="main-content">
@@ -51,8 +52,10 @@
                 </div>
             </div>
             <div class="main-footer" id="main-footer">
-                <iframe id="frame2" src="./main.html" width="770px" height="610px" scrolling="no"  frameborder="0"></iframe>
-                <iframe id="frame" src="./guitar_history.html" width="770px" height="610px" scrolling="no"  frameborder="0"></iframe>
+                <iframe id="frame2" src="./main.html" width="770px" height="610px" scrolling="no"
+                    frameborder="0"></iframe>
+                <iframe id="frame" src="./guitar_history.html" width="770px" height="610px" scrolling="no"
+                    frameborder="0"></iframe>
             </div>
         </div>
 
