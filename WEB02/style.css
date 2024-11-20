@@ -131,7 +131,7 @@ h1 {
     font-family: "DFKai-SB";
     font-size: 16px;
     color: #000000;
-    margin-top: 350px;
+    margin-top: 340px;
     height: 25px;
 
 }
@@ -253,10 +253,66 @@ table {
 .content1 {
     font-size: 16px;
     text-align: left;
-    color: #FF0000
+    color: #FF0000;
+}
+
+.content2 {
+    font-size: 16px;
+    text-align: left;
+    color: #800000;
+}
+
+.content3 {
+    font-size: 16px;
+    text-align: left;
+    color: #0000FF;
+}
+
+.content4 {
+    font-size: 16px;
+    text-align: left;
+    color: #FF0000;
+}
+
+.content5 {
+    font-size: 16px;
+    text-align: left;
+    color: #00FF00;
+}
+
+.content6 {
+    font-size: 16px;
+    text-align: left;
+    color: #000000;
+}
+
+.top1 {
+    margin-left: 570px;
+}
+
+.top2 {
+    margin-left: 335px;
+}
+
+.top3 {
+    margin-left: 510px;
+}
+
+.top4 {
+    margin-left: 555px;
+}
+
+.music {
+    display: block;
+    text-align: center;
+}
+
+.music:hover {
+    background-color: blue
 }
 
 iframe {
+    width: 100%;
     border: none;
     /* 去除邊框 */
     margin: 0;
