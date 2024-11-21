@@ -10,34 +10,40 @@
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function () {
-            // 默认隐藏 iframe
+            // 默认隐藏 iframe 和 container
             $('#frame').hide();
             $('#frame3').hide();
+            $('#container2').hide();
 
             // 点击 "吉他社社史" 链接时触发
             $('#table2').on('click', function (event) {
                 event.preventDefault();  // 阻止默认行为，防止页面跳转
 
-                // 让 iframe 显示并加载 guitar_event.html
-                $('#frame').attr('src', './guitar_history.html').show();
+                // 显示吉他社社史内容的iframe并加载内容
+                $('#frame').show();
+                $('#frame3').hide();  // 隐藏其他iframe
+                $('#container2').show(); // 显示 iframe 容器
 
-                // 移除frame2（如果有需要）
+                // 确保 iframe 只加载一次
+                if (!$('#frame').attr('src')) {
+                    $('#frame').attr('src', './guitar_history.html');
+                }
                 $('.text3').remove();
             });
-        });
-        $(document).ready(function () {
-            // 默认隐藏 iframe
-            $('#frame3').hide();
-            $('#frame').hide();
 
-            // 点击 "吉他社近期活動公告" 链接时触发
+            // 点击 "吉他社近期活动公告" 链接时触发
             $('#table3').on('click', function (event) {
                 event.preventDefault();  // 阻止默认行为，防止页面跳转
 
-                // 让 iframe 显示并加载 guitar_event.html
-                $('#frame3').attr('src', './guitar_event.html').show();
+                // 显示吉他社近期活动公告的iframe并加载内容
+                $('#frame3').show();
+                $('#frame').hide();  // 隐藏其他iframe
+                $('#container2').show(); // 显示 iframe 容器
 
-                // 移除frame2（如果有需要）
+                // 确保 iframe 只加载一次
+                if (!$('#frame3').attr('src')) {
+                    $('#frame3').attr('src', './guitar_event.html');
+                }
                 $('.text3').remove();
             });
         });
@@ -61,44 +67,45 @@
                     </td>
                 </tr>
             </table>
-            <a href="" class="music">
-                <p>基礎樂理</p>
-            </a>
-            <a href="" class="music">
-                <p>常用之吉他技巧</p>
-            </a>
-            <a href="" class="music">
-                <p>音程介紹以及音程表內容</p>
-            </a>
-            <a href="" class="music">
-                <p>節奏型態</p>
-            </a>
-            <a href="" class="music">
-                <p>和絃及級數和絃</p>
-            </a>
-            <a href="" class="music">
-                <p>和絃公式</p>
-            </a>
-            <a href="" class="music">
-                <p>和絃公式</p>
-            </a>
-            <a href="" class="music">
-                <p>轉位複合</p>
-            </a>
-            <a href="" class="music">
-                <p>轉位複合</p>
-            </a>
-            <a href="" class="music">
-                <p>調音法</p>
-            </a>
-            <a href="" class="music">
-                <p>吉他的保養</p>
-            </a>
-            <a href="" class="music">
-                <p>如何轉調</p>
-            </a>
+            <div class="container3">
+                <a href="" class="music">
+                    <p>基礎樂理</p>
+                </a>
+                <a href="" class="music">
+                    <p>常用之吉他技巧</p>
+                </a>
+                <a href="" class="music">
+                    <p>音程介紹以及音程表內容</p>
+                </a>
+                <a href="" class="music">
+                    <p>節奏型態</p>
+                </a>
+                <a href="" class="music">
+                    <p>和絃及級數和絃</p>
+                </a>
+                <a href="" class="music">
+                    <p>和絃公式</p>
+                </a>
+                <a href="" class="music">
+                    <p>和絃公式</p>
+                </a>
+                <a href="" class="music">
+                    <p>轉位複合</p>
+                </a>
+                <a href="" class="music">
+                    <p>轉位複合</p>
+                </a>
+                <a href="" class="music">
+                    <p>調音法</p>
+                </a>
+                <a href="" class="music">
+                    <p>吉他的保養</p>
+                </a>
+                <a href="" class="music">
+                    <p>如何轉調</p>
+                </a>
 
-
+            </div>
         </div>
     </div>
     <div class="container2">

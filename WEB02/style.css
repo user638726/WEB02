@@ -333,3 +333,12 @@ iframe {
     align-items: center;
     /* 可選：讓內容垂直居中 */
 }
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: medium;
+}

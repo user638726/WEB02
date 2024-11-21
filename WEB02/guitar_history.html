@@ -10,33 +10,40 @@
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function () {
-            // 默认隐藏 iframe
+            // 默认隐藏 iframe 和 container
             $('#frame3').hide();
             $('#frame4').hide();
+            $('#container2').hide();
 
             // 点击 "吉他社近期活動公告" 链接时触发
             $('#table2').on('click', function (event) {
                 event.preventDefault();  // 阻止默认行为，防止页面跳转
 
-                // 让 iframe 显示并加载 guitar_event.html
-                $('#frame3').attr('src', './guitar_event.html').show();
+                // 显示 frame3 并加载内容
+                $('#frame3').show();
+                $('#frame4').hide();  // 隐藏其他 iframe
+                $('#container2').show(); // 显示 container2
 
-                // 移除frame2（如果有需要）
+                // 确保 iframe 只加载一次
+                if (!$('#frame3').attr('src')) {
+                    $('#frame3').attr('src', './guitar_event.html');
+                }
                 $('.text3').remove();
             });
-        });
-        $(document).ready(function () {
-            // 默认隐藏 iframe
-            $('#frame4').hide();
-            $('#frame3').hide();
+
             // 点击 "吉他社教學內容" 链接时触发
             $('#table3').on('click', function (event) {
                 event.preventDefault();  // 阻止默认行为，防止页面跳转
 
-                // 让 iframe 显示并加载 guitar_event.html
-                $('#frame4').attr('src', './guitar_learning.html').show();
+                // 显示 frame4 并加载内容
+                $('#frame4').show();
+                $('#frame3').hide();  // 隐藏其他 iframe
+                $('#container2').show(); // 显示 container2
 
-                // 移除frame2（如果有需要）
+                // 确保 iframe 只加载一次
+                if (!$('#frame4').attr('src')) {
+                    $('#frame4').attr('src', './guitar_learning.html');
+                }
                 $('.text3').remove();
             });
         });
