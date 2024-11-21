@@ -324,8 +324,8 @@ iframe {
 }
 
 .container2 {
-    width: 100%;
-    height: 100%;
+    width: 770px;
+    height: 654px;
     /* 或者設定具體的高度，例如 600px */
     display: flex;
     justify-content: center;
